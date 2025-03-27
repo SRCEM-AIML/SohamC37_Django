@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-creds')
-        DOCKER_IMAGE = 'sujalpandey09/studentproject'
+        DOCKER_IMAGE = 'soham1105/studentproject'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/sujalpandey09/C3_40_assignment2.git'
+                git 'https://github.com/soham1105/SohamC37_Django.git'
             }
         }
         stage('Build Docker Image') {
